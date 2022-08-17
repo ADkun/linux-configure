@@ -1,3 +1,5 @@
+
+
 SetPrinter(){
     SetRed="echo -en \e[91m"
     SetGreen="echo -en \e[32m"
