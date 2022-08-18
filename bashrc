@@ -49,11 +49,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-
-# zshrc
-alias vzsh='vim ~/.zshrc'
-alias szsh='source ~/.zshrc'
-
 # ps grep kill
 alias pg='PgFunc(){ ps -ef|grep -i $1; };PgFunc'
 #alias pk='PkFunc(){ ps -ef|grep -i $1|awk "{print $2}"|xargs kill -9; };PkFunc'
