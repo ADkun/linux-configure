@@ -55,7 +55,10 @@ alias pg='PgFunc(){ ps -ef|grep -i $1; };PgFunc'
 
 # find grep
 alias ff='FfFunc(){ find . -type f|grep -i $1; }; FfFunc'
-alias fd='FdFunc(){ find . -type d|grep -i $1; }; FdFunc'
+alias fd='FdFunc(){ find . 0-type d|grep -i $1; }; FdFunc'
+alias cdff='DffFunc(){ cd $(dirname $(ff $1 | head -n $2 | tail -n 1)); }; DffFunc'
+alias cdfd='DfdFunc(){ cd $(fd $1 | head -n $2 | tail -n 1); }; DfdFunc'
+
 
 # locate grep
 alias lc='updatedb;locate'
