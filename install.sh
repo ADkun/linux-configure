@@ -36,6 +36,7 @@ WriteNotRoot(){
 Write(){
     if [[ "$is_root" == true ]]; then
         Exec WriteRoot
+        Exec WriteNotRoot
     else
         Exec WriteNotRoot
     fi
